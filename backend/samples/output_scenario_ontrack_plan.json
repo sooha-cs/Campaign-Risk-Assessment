@@ -1,0 +1,809 @@
+{
+  "costEstimate": {
+    "baseCost": 278000,
+    "budget": 1200000,
+    "byPhase": [
+      {
+        "cost": 35000,
+        "phase": "Initiation"
+      },
+      {
+        "cost": 77500,
+        "phase": "Planning"
+      },
+      {
+        "cost": 82000,
+        "phase": "Execution"
+      },
+      {
+        "cost": 49000,
+        "phase": "Testing & Review"
+      },
+      {
+        "cost": 34500,
+        "phase": "Launch & Closure"
+      }
+    ],
+    "contingency": 27800,
+    "contingencyRate": 0.1,
+    "currency": "INR",
+    "total": 305800,
+    "variance": 894200,
+    "withinBudget": true
+  },
+  "resourcePlan": [
+    {
+      "assignedTasks": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "2.1",
+        "4.1",
+        "4.5",
+        "5.1",
+        "5.3",
+        "5.4"
+      ],
+      "costPerDay": 5000,
+      "count": 1,
+      "overallocated": true,
+      "peakConcurrentTasks": 2,
+      "role": "Project Manager",
+      "totalDays": 20,
+      "utilizationPercent": 67
+    },
+    {
+      "assignedTasks": [
+        "2.3",
+        "3.2",
+        "3.4",
+        "4.3"
+      ],
+      "costPerDay": 4000,
+      "count": 2,
+      "overallocated": false,
+      "peakConcurrentTasks": 2,
+      "role": "Designer",
+      "totalDays": 12,
+      "utilizationPercent": 20
+    },
+    {
+      "assignedTasks": [
+        "2.2",
+        "2.4",
+        "3.3"
+      ],
+      "costPerDay": 3500,
+      "count": 1,
+      "overallocated": false,
+      "peakConcurrentTasks": 1,
+      "role": "Copywriter",
+      "totalDays": 8,
+      "utilizationPercent": 27
+    },
+    {
+      "assignedTasks": [
+        "2.6",
+        "3.5",
+        "4.4",
+        "5.2"
+      ],
+      "costPerDay": 4500,
+      "count": 1,
+      "overallocated": false,
+      "peakConcurrentTasks": 1,
+      "role": "Media Buyer",
+      "totalDays": 8,
+      "utilizationPercent": 27
+    },
+    {
+      "assignedTasks": [
+        "2.5",
+        "3.1",
+        "3.6",
+        "4.2"
+      ],
+      "costPerDay": 6000,
+      "count": 1,
+      "overallocated": true,
+      "peakConcurrentTasks": 2,
+      "role": "Developer",
+      "totalDays": 11,
+      "utilizationPercent": 37
+    }
+  ],
+  "schedule": [
+    {
+      "dependsOn": [],
+      "durationDays": 2,
+      "endDate": "2026-10-13",
+      "isCritical": true,
+      "name": "Kick\u2011off meeting",
+      "phase": "Initiation",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-10-12",
+      "taskId": "1.1"
+    },
+    {
+      "dependsOn": [
+        "1.1"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-10-15",
+      "isCritical": true,
+      "name": "Define campaign objectives and KPIs",
+      "phase": "Initiation",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-10-14",
+      "taskId": "1.2"
+    },
+    {
+      "dependsOn": [
+        "1.2"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-18",
+      "isCritical": true,
+      "name": "Legal brief and request for offer review",
+      "phase": "Initiation",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-10-16",
+      "taskId": "1.3"
+    },
+    {
+      "dependsOn": [
+        "1.3"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-21",
+      "isCritical": true,
+      "name": "Audience segmentation and targeting strategy",
+      "phase": "Planning",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-10-19",
+      "taskId": "2.1"
+    },
+    {
+      "dependsOn": [
+        "1.3"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-21",
+      "isCritical": false,
+      "name": "Legal review and approval of offers",
+      "phase": "Testing & Review",
+      "resource": "Project Manager",
+      "slackDays": 13,
+      "startDate": "2026-10-19",
+      "taskId": "4.1"
+    },
+    {
+      "dependsOn": [
+        "2.1"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-10-23",
+      "isCritical": true,
+      "name": "Creative brief development",
+      "phase": "Planning",
+      "resource": "Copywriter",
+      "slackDays": 0,
+      "startDate": "2026-10-22",
+      "taskId": "2.2"
+    },
+    {
+      "dependsOn": [
+        "2.1"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-24",
+      "isCritical": false,
+      "name": "Media plan and budget allocation",
+      "phase": "Planning",
+      "resource": "Media Buyer",
+      "slackDays": 6,
+      "startDate": "2026-10-22",
+      "taskId": "2.6"
+    },
+    {
+      "dependsOn": [
+        "2.2"
+      ],
+      "durationDays": 4,
+      "endDate": "2026-10-27",
+      "isCritical": true,
+      "name": "Design concepts for email & landing page",
+      "phase": "Planning",
+      "resource": "Designer",
+      "slackDays": 0,
+      "startDate": "2026-10-24",
+      "taskId": "2.3"
+    },
+    {
+      "dependsOn": [
+        "2.2"
+      ],
+      "durationDays": 4,
+      "endDate": "2026-10-27",
+      "isCritical": true,
+      "name": "Copywriting for email and landing page",
+      "phase": "Planning",
+      "resource": "Copywriter",
+      "slackDays": 0,
+      "startDate": "2026-10-24",
+      "taskId": "2.4"
+    },
+    {
+      "dependsOn": [
+        "2.2"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-10-25",
+      "isCritical": false,
+      "name": "Technical specifications for landing page",
+      "phase": "Planning",
+      "resource": "Developer",
+      "slackDays": 2,
+      "startDate": "2026-10-24",
+      "taskId": "2.5"
+    },
+    {
+      "dependsOn": [
+        "2.5",
+        "2.3",
+        "2.4"
+      ],
+      "durationDays": 5,
+      "endDate": "2026-11-01",
+      "isCritical": true,
+      "name": "Develop landing page (HTML/CSS/JS)",
+      "phase": "Execution",
+      "resource": "Developer",
+      "slackDays": 0,
+      "startDate": "2026-10-28",
+      "taskId": "3.1"
+    },
+    {
+      "dependsOn": [
+        "2.3"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-30",
+      "isCritical": true,
+      "name": "Design final email templates",
+      "phase": "Execution",
+      "resource": "Designer",
+      "slackDays": 0,
+      "startDate": "2026-10-28",
+      "taskId": "3.2"
+    },
+    {
+      "dependsOn": [
+        "2.4"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-10-29",
+      "isCritical": false,
+      "name": "Write final email copy",
+      "phase": "Execution",
+      "resource": "Copywriter",
+      "slackDays": 1,
+      "startDate": "2026-10-28",
+      "taskId": "3.3"
+    },
+    {
+      "dependsOn": [
+        "2.3"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-30",
+      "isCritical": true,
+      "name": "Create paid\u2011ad creatives",
+      "phase": "Execution",
+      "resource": "Designer",
+      "slackDays": 0,
+      "startDate": "2026-10-28",
+      "taskId": "3.4"
+    },
+    {
+      "dependsOn": [
+        "3.4",
+        "2.6"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-11-01",
+      "isCritical": true,
+      "name": "Set up paid\u2011ad campaigns in platforms",
+      "phase": "Execution",
+      "resource": "Media Buyer",
+      "slackDays": 0,
+      "startDate": "2026-10-31",
+      "taskId": "3.5"
+    },
+    {
+      "dependsOn": [
+        "3.2",
+        "3.3"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-11-01",
+      "isCritical": true,
+      "name": "Integrate email templates with ESP",
+      "phase": "Execution",
+      "resource": "Developer",
+      "slackDays": 0,
+      "startDate": "2026-10-31",
+      "taskId": "3.6"
+    },
+    {
+      "dependsOn": [
+        "3.1"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-11-03",
+      "isCritical": true,
+      "name": "Functional testing of landing page",
+      "phase": "Testing & Review",
+      "resource": "Developer",
+      "slackDays": 0,
+      "startDate": "2026-11-02",
+      "taskId": "4.2"
+    },
+    {
+      "dependsOn": [
+        "3.6"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-11-03",
+      "isCritical": true,
+      "name": "Email rendering tests across clients",
+      "phase": "Testing & Review",
+      "resource": "Designer",
+      "slackDays": 0,
+      "startDate": "2026-11-02",
+      "taskId": "4.3"
+    },
+    {
+      "dependsOn": [
+        "3.5"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-11-03",
+      "isCritical": true,
+      "name": "Ad preview and compliance check",
+      "phase": "Testing & Review",
+      "resource": "Media Buyer",
+      "slackDays": 0,
+      "startDate": "2026-11-02",
+      "taskId": "4.4"
+    },
+    {
+      "dependsOn": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ],
+      "durationDays": 1,
+      "endDate": "2026-11-04",
+      "isCritical": true,
+      "name": "Final sign\u2011off of all assets",
+      "phase": "Testing & Review",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-11-04",
+      "taskId": "4.5"
+    },
+    {
+      "dependsOn": [
+        "4.5"
+      ],
+      "durationDays": 1,
+      "endDate": "2026-11-05",
+      "isCritical": true,
+      "name": "Schedule and send email blast",
+      "phase": "Launch & Closure",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-11-05",
+      "taskId": "5.1"
+    },
+    {
+      "dependsOn": [
+        "4.5"
+      ],
+      "durationDays": 1,
+      "endDate": "2026-11-05",
+      "isCritical": true,
+      "name": "Activate paid\u2011ad campaigns",
+      "phase": "Launch & Closure",
+      "resource": "Media Buyer",
+      "slackDays": 0,
+      "startDate": "2026-11-05",
+      "taskId": "5.2"
+    },
+    {
+      "dependsOn": [
+        "5.1",
+        "5.2"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-11-07",
+      "isCritical": true,
+      "name": "Monitor performance (first 48h)",
+      "phase": "Launch & Closure",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-11-06",
+      "taskId": "5.3"
+    },
+    {
+      "dependsOn": [
+        "5.3"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-11-10",
+      "isCritical": true,
+      "name": "Compile launch performance report",
+      "phase": "Launch & Closure",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-11-08",
+      "taskId": "5.4"
+    }
+  ],
+  "scheduleSummary": {
+    "criticalPath": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "3.1",
+      "3.2",
+      "3.4",
+      "3.5",
+      "3.6",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4"
+    ],
+    "daysAvailable": 61,
+    "deadline": "2026-12-11",
+    "durationDays": 30,
+    "finishDate": "2026-11-10",
+    "startDate": "2026-10-12",
+    "withinDeadline": true
+  },
+  "warnings": [
+    "Project Manager: up to 2 tasks run at once but only 1 available.",
+    "Developer: up to 2 tasks run at once but only 1 available."
+  ],
+  "wbs": [
+    {
+      "id": "1",
+      "name": "Initiation",
+      "tasks": [
+        {
+          "dependsOn": [],
+          "durationDays": 2,
+          "estimatedCost": 10000,
+          "id": "1.1",
+          "name": "Kick\u2011off meeting",
+          "resource": "Project Manager"
+        },
+        {
+          "dependsOn": [
+            "1.1"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 10000,
+          "id": "1.2",
+          "name": "Define campaign objectives and KPIs",
+          "resource": "Project Manager"
+        },
+        {
+          "dependsOn": [
+            "1.2"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 15000,
+          "id": "1.3",
+          "name": "Legal brief and request for offer review",
+          "resource": "Project Manager"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Planning",
+      "tasks": [
+        {
+          "dependsOn": [
+            "1.3"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 15000,
+          "id": "2.1",
+          "name": "Audience segmentation and targeting strategy",
+          "resource": "Project Manager"
+        },
+        {
+          "dependsOn": [
+            "2.1"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 7000,
+          "id": "2.2",
+          "name": "Creative brief development",
+          "resource": "Copywriter"
+        },
+        {
+          "dependsOn": [
+            "2.2"
+          ],
+          "durationDays": 4,
+          "estimatedCost": 16000,
+          "id": "2.3",
+          "name": "Design concepts for email & landing page",
+          "resource": "Designer"
+        },
+        {
+          "dependsOn": [
+            "2.2"
+          ],
+          "durationDays": 4,
+          "estimatedCost": 14000,
+          "id": "2.4",
+          "name": "Copywriting for email and landing page",
+          "resource": "Copywriter"
+        },
+        {
+          "dependsOn": [
+            "2.2"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 12000,
+          "id": "2.5",
+          "name": "Technical specifications for landing page",
+          "resource": "Developer"
+        },
+        {
+          "dependsOn": [
+            "2.1"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 13500,
+          "id": "2.6",
+          "name": "Media plan and budget allocation",
+          "resource": "Media Buyer"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Execution",
+      "tasks": [
+        {
+          "dependsOn": [
+            "2.5",
+            "2.3",
+            "2.4"
+          ],
+          "durationDays": 5,
+          "estimatedCost": 30000,
+          "id": "3.1",
+          "name": "Develop landing page (HTML/CSS/JS)",
+          "resource": "Developer"
+        },
+        {
+          "dependsOn": [
+            "2.3"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 12000,
+          "id": "3.2",
+          "name": "Design final email templates",
+          "resource": "Designer"
+        },
+        {
+          "dependsOn": [
+            "2.4"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 7000,
+          "id": "3.3",
+          "name": "Write final email copy",
+          "resource": "Copywriter"
+        },
+        {
+          "dependsOn": [
+            "2.3"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 12000,
+          "id": "3.4",
+          "name": "Create paid\u2011ad creatives",
+          "resource": "Designer"
+        },
+        {
+          "dependsOn": [
+            "3.4",
+            "2.6"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 9000,
+          "id": "3.5",
+          "name": "Set up paid\u2011ad campaigns in platforms",
+          "resource": "Media Buyer"
+        },
+        {
+          "dependsOn": [
+            "3.2",
+            "3.3"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 12000,
+          "id": "3.6",
+          "name": "Integrate email templates with ESP",
+          "resource": "Developer"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Testing & Review",
+      "tasks": [
+        {
+          "dependsOn": [
+            "1.3"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 15000,
+          "id": "4.1",
+          "name": "Legal review and approval of offers",
+          "resource": "Project Manager"
+        },
+        {
+          "dependsOn": [
+            "3.1"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 12000,
+          "id": "4.2",
+          "name": "Functional testing of landing page",
+          "resource": "Developer"
+        },
+        {
+          "dependsOn": [
+            "3.6"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 8000,
+          "id": "4.3",
+          "name": "Email rendering tests across clients",
+          "resource": "Designer"
+        },
+        {
+          "dependsOn": [
+            "3.5"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 9000,
+          "id": "4.4",
+          "name": "Ad preview and compliance check",
+          "resource": "Media Buyer"
+        },
+        {
+          "dependsOn": [
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4"
+          ],
+          "durationDays": 1,
+          "estimatedCost": 5000,
+          "id": "4.5",
+          "name": "Final sign\u2011off of all assets",
+          "resource": "Project Manager"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Launch & Closure",
+      "tasks": [
+        {
+          "dependsOn": [
+            "4.5"
+          ],
+          "durationDays": 1,
+          "estimatedCost": 5000,
+          "id": "5.1",
+          "name": "Schedule and send email blast",
+          "resource": "Project Manager"
+        },
+        {
+          "dependsOn": [
+            "4.5"
+          ],
+          "durationDays": 1,
+          "estimatedCost": 4500,
+          "id": "5.2",
+          "name": "Activate paid\u2011ad campaigns",
+          "resource": "Media Buyer"
+        },
+        {
+          "dependsOn": [
+            "5.1",
+            "5.2"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 10000,
+          "id": "5.3",
+          "name": "Monitor performance (first 48h)",
+          "resource": "Project Manager"
+        },
+        {
+          "dependsOn": [
+            "5.3"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 15000,
+          "id": "5.4",
+          "name": "Compile launch performance report",
+          "resource": "Project Manager"
+        }
+      ]
+    }
+  ],
+  "workflow": [
+    {
+      "description": "Define goals, scope and legal constraints",
+      "name": "Initiation",
+      "owner": "Project Manager",
+      "step": 1
+    },
+    {
+      "description": "Develop strategy, creative brief and technical specs",
+      "name": "Planning",
+      "owner": "Project Manager",
+      "step": 2
+    },
+    {
+      "description": "Produce assets, build landing page and set up media",
+      "name": "Execution",
+      "owner": "Project Manager",
+      "step": 3
+    },
+    {
+      "description": "Validate legal, functional and compliance aspects",
+      "name": "Testing & Review",
+      "owner": "Project Manager",
+      "step": 4
+    },
+    {
+      "description": "Deploy email and ads, begin tracking",
+      "name": "Launch",
+      "owner": "Project Manager",
+      "step": 5
+    },
+    {
+      "description": "Report results and archive deliverables",
+      "name": "Closure",
+      "owner": "Project Manager",
+      "step": 6
+    }
+  ]
+}

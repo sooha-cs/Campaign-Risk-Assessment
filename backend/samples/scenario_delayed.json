@@ -1,0 +1,90 @@
+{
+  "name": "Product Launch Teaser Campaign",
+  "description": "Teaser campaign for a fixed launch event, with a short timeline and a small team. Scenario: DELAYED.",
+  "projectType": "Marketing campaign",
+  "budget": 900000,
+  "currency": "INR",
+  "startDate": "2026-10-12",
+  "deadline": "2026-11-02",
+  "teamSize": 5,
+  "resources": [
+    {
+      "role": "Project Manager",
+      "count": 1,
+      "costPerDay": 5000
+    },
+    {
+      "role": "Designer",
+      "count": 1,
+      "costPerDay": 4000
+    },
+    {
+      "role": "Copywriter",
+      "count": 1,
+      "costPerDay": 3500
+    },
+    {
+      "role": "Media Buyer",
+      "count": 1,
+      "costPerDay": 4500
+    },
+    {
+      "role": "Developer",
+      "count": 1,
+      "costPerDay": 6000
+    }
+  ],
+  "deliverables": [
+    "Teaser video",
+    "Launch landing page",
+    "Social media posts",
+    "Press release",
+    "Paid ad creatives"
+  ],
+  "constraints": [
+    "Launch event date is fixed and cannot move",
+    "Each creative approval round takes 3 days"
+  ],
+  "pastProjects": [
+    {
+      "name": "Gadget Teaser",
+      "plannedCost": 600000,
+      "actualCost": 640000,
+      "plannedDays": 25,
+      "actualDays": 34,
+      "outcome": "Late"
+    },
+    {
+      "name": "App Pre-launch",
+      "plannedCost": 500000,
+      "actualCost": 545000,
+      "plannedDays": 21,
+      "actualDays": 29,
+      "outcome": "Late"
+    },
+    {
+      "name": "Festival Teaser",
+      "plannedCost": 450000,
+      "actualCost": 470000,
+      "plannedDays": 18,
+      "actualDays": 24,
+      "outcome": "Late"
+    },
+    {
+      "name": "Store Opening",
+      "plannedCost": 350000,
+      "actualCost": 365000,
+      "plannedDays": 20,
+      "actualDays": 26,
+      "outcome": "Late"
+    },
+    {
+      "name": "Feature Reveal",
+      "plannedCost": 400000,
+      "actualCost": 415000,
+      "plannedDays": 15,
+      "actualDays": 19,
+      "outcome": "Late"
+    }
+  ]
+}

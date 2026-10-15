@@ -1,0 +1,127 @@
+{
+  "projectId": "library-management-system",
+  "risks": [
+    {
+      "category": "Time",
+      "description": "The deadline is fixed by the college exam schedule; with bufferDays -1, any slip in critical tasks like 2.2 (Design system architecture) will miss the exam window.",
+      "id": 1,
+      "impact": 5,
+      "key": "time-fixed-deadline",
+      "level": "Critical",
+      "mitigation": [
+        "Prioritize design work and start it immediately after requirements",
+        "Escalate to management for possible deadline extension if needed"
+      ],
+      "owner": "Project Manager",
+      "priority": "Escalate immediately",
+      "probability": 5,
+      "score": 25
+    },
+    {
+      "category": "Time",
+      "description": "Task 3.5 (Integrate front\u2011end UI) is on the critical path with 0 slack and the plan finishes 1 day after the deadline, so any delay pushes the launch past the exam schedule.",
+      "id": 2,
+      "impact": 4,
+      "key": "time-critical-3-5",
+      "level": "Critical",
+      "mitigation": [
+        "Start integration a day earlier by overlapping with task 3.2",
+        "Add a second Developer for UI integration if budget permits"
+      ],
+      "owner": "Project Manager",
+      "priority": "Escalate immediately",
+      "probability": 4,
+      "score": 16
+    },
+    {
+      "category": "Cost",
+      "description": "Estimated cost uses 89.1% of the INR 100,000 budget and past projects averaged a 17% cost overrun, raising the chance of exceeding budget.",
+      "id": 3,
+      "impact": 4,
+      "key": "cost-budget-utilization",
+      "level": "Critical",
+      "mitigation": [
+        "Secure a 5% contingency reserve",
+        "Negotiate fixed\u2011price contracts for third\u2011party services"
+      ],
+      "owner": "Project Manager",
+      "priority": "Escalate immediately",
+      "probability": 4,
+      "score": 16
+    },
+    {
+      "category": "Resource",
+      "description": "Developer role is over\u2011allocated (up to 3 concurrent tasks) with only 2 developers, impacting critical tasks 2.2, 3.1, 3.3, 3.4, 3.5.",
+      "id": 4,
+      "impact": 4,
+      "key": "resource-dev-overalloc",
+      "level": "Critical",
+      "mitigation": [
+        "Add a contract developer for peak periods",
+        "Reschedule non\u2011critical tasks 2.3 and 3.2 to reduce overlap"
+      ],
+      "owner": "Developer",
+      "priority": "Escalate immediately",
+      "probability": 4,
+      "score": 16
+    },
+    {
+      "category": "Resource",
+      "description": "Project Manager is over\u2011allocated (up to 2 tasks simultaneously) while only one is available, affecting critical tasks 1.1, 1.3, 2.1.",
+      "id": 5,
+      "impact": 3,
+      "key": "resource-pm-overalloc",
+      "level": "High",
+      "mitigation": [
+        "Re\u2011assign low\u2011priority task 1.2 to a team member",
+        "Adjust schedule to stagger PM tasks"
+      ],
+      "owner": "Project Manager",
+      "priority": "Act this week",
+      "probability": 4,
+      "score": 12
+    },
+    {
+      "category": "Quality",
+      "description": "Testing tasks 4.2 and 4.3 have zero slack; limited testing time risks undiscovered defects in the loan management module (task 3.4).",
+      "id": 6,
+      "impact": 4,
+      "key": "quality-testing-time",
+      "level": "High",
+      "mitigation": [
+        "Allocate extra tester hours for integration testing",
+        "Automate regression tests for core modules"
+      ],
+      "owner": "Tester",
+      "priority": "Act this week",
+      "probability": 3,
+      "score": 12
+    },
+    {
+      "category": "Cost",
+      "description": "Estimated cost with contingency is INR 89,100, leaving only INR 10,900 margin; overtime or scope creep could breach the INR 100,000 budget.",
+      "id": 7,
+      "impact": 4,
+      "key": "cost-contingency-shortfall",
+      "level": "High",
+      "mitigation": [
+        "Track daily spend against budget forecast",
+        "Limit overtime to critical\u2011path tasks only"
+      ],
+      "owner": "Project Manager",
+      "priority": "Act this week",
+      "probability": 3,
+      "score": 12
+    }
+  ],
+  "summary": {
+    "byLevel": {
+      "Critical": 4,
+      "High": 3,
+      "Low": 0,
+      "Medium": 0
+    },
+    "highestScore": 25,
+    "total": 7
+  }
+}

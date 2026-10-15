@@ -1,0 +1,54 @@
+{
+  "name": "Library Management System",
+  "description": "Web system to manage books, members and loans for a college library.",
+  "projectType": "Software",
+  "budget": 100000,
+  "currency": "INR",
+  "startDate": "2026-10-12",
+  "deadline": "2026-11-12",
+  "teamSize": 4,
+  "resources": [
+    {
+      "role": "Project Manager",
+      "count": 1,
+      "costPerDay": 2000
+    },
+    {
+      "role": "Developer",
+      "count": 2,
+      "costPerDay": 1500
+    },
+    {
+      "role": "Tester",
+      "count": 1,
+      "costPerDay": 1000
+    }
+  ],
+  "deliverables": [
+    "Working web application",
+    "User manual",
+    "Test report"
+  ],
+  "constraints": [
+    "Library staff available only on weekdays",
+    "Deadline is fixed by the college exam schedule"
+  ],
+  "pastProjects": [
+    {
+      "name": "Student portal",
+      "plannedCost": 80000,
+      "actualCost": 104000,
+      "plannedDays": 30,
+      "actualDays": 36,
+      "outcome": "Over budget and late"
+    },
+    {
+      "name": "Fee tracker",
+      "plannedCost": 50000,
+      "actualCost": 52000,
+      "plannedDays": 20,
+      "actualDays": 21,
+      "outcome": "Delivered"
+    }
+  ]
+}

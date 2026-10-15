@@ -1,0 +1,726 @@
+{
+  "costEstimate": {
+    "baseCost": 236500,
+    "budget": 900000,
+    "byPhase": [
+      {
+        "cost": 20000,
+        "phase": "Initiation"
+      },
+      {
+        "cost": 33000,
+        "phase": "Planning"
+      },
+      {
+        "cost": 101000,
+        "phase": "Production"
+      },
+      {
+        "cost": 60000,
+        "phase": "Review & Approval"
+      },
+      {
+        "cost": 22500,
+        "phase": "Delivery & Closure"
+      }
+    ],
+    "contingency": 23650,
+    "contingencyRate": 0.1,
+    "currency": "INR",
+    "total": 260150,
+    "variance": 639850,
+    "withinBudget": true
+  },
+  "resourcePlan": [
+    {
+      "assignedTasks": [
+        "1.1",
+        "1.2",
+        "2.1",
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "5.5"
+      ],
+      "costPerDay": 5000,
+      "count": 1,
+      "overallocated": true,
+      "peakConcurrentTasks": 2,
+      "role": "Project Manager",
+      "totalDays": 18,
+      "utilizationPercent": 86
+    },
+    {
+      "assignedTasks": [
+        "2.2",
+        "3.2",
+        "3.3",
+        "3.6"
+      ],
+      "costPerDay": 4000,
+      "count": 1,
+      "overallocated": true,
+      "peakConcurrentTasks": 3,
+      "role": "Designer",
+      "totalDays": 13,
+      "utilizationPercent": 62
+    },
+    {
+      "assignedTasks": [
+        "2.3",
+        "3.4",
+        "5.2",
+        "5.4"
+      ],
+      "costPerDay": 3500,
+      "count": 1,
+      "overallocated": false,
+      "peakConcurrentTasks": 1,
+      "role": "Copywriter",
+      "totalDays": 6,
+      "utilizationPercent": 29
+    },
+    {
+      "assignedTasks": [
+        "2.4",
+        "5.3"
+      ],
+      "costPerDay": 4500,
+      "count": 1,
+      "overallocated": false,
+      "peakConcurrentTasks": 1,
+      "role": "Media Buyer",
+      "totalDays": 3,
+      "utilizationPercent": 14
+    },
+    {
+      "assignedTasks": [
+        "3.1",
+        "3.5",
+        "5.1"
+      ],
+      "costPerDay": 6000,
+      "count": 1,
+      "overallocated": true,
+      "peakConcurrentTasks": 2,
+      "role": "Developer",
+      "totalDays": 10,
+      "utilizationPercent": 48
+    }
+  ],
+  "schedule": [
+    {
+      "dependsOn": [],
+      "durationDays": 2,
+      "endDate": "2026-10-13",
+      "isCritical": true,
+      "name": "Define goals and scope",
+      "phase": "Initiation",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-10-12",
+      "taskId": "1.1"
+    },
+    {
+      "dependsOn": [
+        "1.1"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-10-15",
+      "isCritical": true,
+      "name": "Identify target audience",
+      "phase": "Initiation",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-10-14",
+      "taskId": "1.2"
+    },
+    {
+      "dependsOn": [
+        "1.2"
+      ],
+      "durationDays": 1,
+      "endDate": "2026-10-16",
+      "isCritical": true,
+      "name": "Create campaign brief",
+      "phase": "Planning",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-10-16",
+      "taskId": "2.1"
+    },
+    {
+      "dependsOn": [
+        "2.1"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-19",
+      "isCritical": true,
+      "name": "Storyboard teaser video",
+      "phase": "Planning",
+      "resource": "Designer",
+      "slackDays": 0,
+      "startDate": "2026-10-17",
+      "taskId": "2.2"
+    },
+    {
+      "dependsOn": [
+        "2.1"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-10-18",
+      "isCritical": false,
+      "name": "Draft copy for assets",
+      "phase": "Planning",
+      "resource": "Copywriter",
+      "slackDays": 1,
+      "startDate": "2026-10-17",
+      "taskId": "2.3"
+    },
+    {
+      "dependsOn": [
+        "2.1"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-10-18",
+      "isCritical": false,
+      "name": "Develop media buying plan",
+      "phase": "Planning",
+      "resource": "Media Buyer",
+      "slackDays": 6,
+      "startDate": "2026-10-17",
+      "taskId": "2.4"
+    },
+    {
+      "dependsOn": [
+        "2.3"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-10-20",
+      "isCritical": false,
+      "name": "Write press release",
+      "phase": "Production",
+      "resource": "Copywriter",
+      "slackDays": 7,
+      "startDate": "2026-10-19",
+      "taskId": "3.4"
+    },
+    {
+      "dependsOn": [
+        "2.4"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-21",
+      "isCritical": false,
+      "name": "Create paid ad creatives",
+      "phase": "Production",
+      "resource": "Designer",
+      "slackDays": 6,
+      "startDate": "2026-10-19",
+      "taskId": "3.6"
+    },
+    {
+      "dependsOn": [
+        "2.2"
+      ],
+      "durationDays": 5,
+      "endDate": "2026-10-24",
+      "isCritical": false,
+      "name": "Produce teaser video",
+      "phase": "Production",
+      "resource": "Developer",
+      "slackDays": 4,
+      "startDate": "2026-10-20",
+      "taskId": "3.1"
+    },
+    {
+      "dependsOn": [
+        "2.2",
+        "2.3"
+      ],
+      "durationDays": 4,
+      "endDate": "2026-10-23",
+      "isCritical": true,
+      "name": "Design landing page UI",
+      "phase": "Production",
+      "resource": "Designer",
+      "slackDays": 0,
+      "startDate": "2026-10-20",
+      "taskId": "3.2"
+    },
+    {
+      "dependsOn": [
+        "2.2"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-22",
+      "isCritical": false,
+      "name": "Create social media graphics",
+      "phase": "Production",
+      "resource": "Designer",
+      "slackDays": 5,
+      "startDate": "2026-10-20",
+      "taskId": "3.3"
+    },
+    {
+      "dependsOn": [
+        "3.4"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-23",
+      "isCritical": false,
+      "name": "Press release approval round",
+      "phase": "Review & Approval",
+      "resource": "Project Manager",
+      "slackDays": 7,
+      "startDate": "2026-10-21",
+      "taskId": "4.4"
+    },
+    {
+      "dependsOn": [
+        "3.3",
+        "3.6"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-25",
+      "isCritical": false,
+      "name": "Social & ad creatives approval round",
+      "phase": "Review & Approval",
+      "resource": "Project Manager",
+      "slackDays": 5,
+      "startDate": "2026-10-23",
+      "taskId": "4.3"
+    },
+    {
+      "dependsOn": [
+        "3.2"
+      ],
+      "durationDays": 4,
+      "endDate": "2026-10-27",
+      "isCritical": true,
+      "name": "Build landing page",
+      "phase": "Production",
+      "resource": "Developer",
+      "slackDays": 0,
+      "startDate": "2026-10-24",
+      "taskId": "3.5"
+    },
+    {
+      "dependsOn": [
+        "4.4"
+      ],
+      "durationDays": 1,
+      "endDate": "2026-10-24",
+      "isCritical": false,
+      "name": "Distribute press release",
+      "phase": "Delivery & Closure",
+      "resource": "Copywriter",
+      "slackDays": 7,
+      "startDate": "2026-10-24",
+      "taskId": "5.4"
+    },
+    {
+      "dependsOn": [
+        "3.1"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-27",
+      "isCritical": false,
+      "name": "Video approval round",
+      "phase": "Review & Approval",
+      "resource": "Project Manager",
+      "slackDays": 4,
+      "startDate": "2026-10-25",
+      "taskId": "4.1"
+    },
+    {
+      "dependsOn": [
+        "4.3"
+      ],
+      "durationDays": 1,
+      "endDate": "2026-10-26",
+      "isCritical": false,
+      "name": "Schedule social media posts",
+      "phase": "Delivery & Closure",
+      "resource": "Copywriter",
+      "slackDays": 5,
+      "startDate": "2026-10-26",
+      "taskId": "5.2"
+    },
+    {
+      "dependsOn": [
+        "4.3"
+      ],
+      "durationDays": 1,
+      "endDate": "2026-10-26",
+      "isCritical": false,
+      "name": "Launch paid advertising",
+      "phase": "Delivery & Closure",
+      "resource": "Media Buyer",
+      "slackDays": 5,
+      "startDate": "2026-10-26",
+      "taskId": "5.3"
+    },
+    {
+      "dependsOn": [
+        "3.5"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-30",
+      "isCritical": true,
+      "name": "Landing page approval round",
+      "phase": "Review & Approval",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-10-28",
+      "taskId": "4.2"
+    },
+    {
+      "dependsOn": [
+        "4.2"
+      ],
+      "durationDays": 1,
+      "endDate": "2026-10-31",
+      "isCritical": true,
+      "name": "Publish landing page",
+      "phase": "Delivery & Closure",
+      "resource": "Developer",
+      "slackDays": 0,
+      "startDate": "2026-10-31",
+      "taskId": "5.1"
+    },
+    {
+      "dependsOn": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4"
+      ],
+      "durationDays": 1,
+      "endDate": "2026-11-01",
+      "isCritical": true,
+      "name": "Project closure and handover",
+      "phase": "Delivery & Closure",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-11-01",
+      "taskId": "5.5"
+    }
+  ],
+  "scheduleSummary": {
+    "criticalPath": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "2.2",
+      "3.2",
+      "3.5",
+      "4.2",
+      "5.1",
+      "5.5"
+    ],
+    "daysAvailable": 22,
+    "deadline": "2026-11-02",
+    "durationDays": 21,
+    "finishDate": "2026-11-01",
+    "startDate": "2026-10-12",
+    "withinDeadline": true
+  },
+  "warnings": [
+    "Project Manager: up to 2 tasks run at once but only 1 available.",
+    "Designer: up to 3 tasks run at once but only 1 available.",
+    "Developer: up to 2 tasks run at once but only 1 available."
+  ],
+  "wbs": [
+    {
+      "id": "1",
+      "name": "Initiation",
+      "tasks": [
+        {
+          "dependsOn": [],
+          "durationDays": 2,
+          "estimatedCost": 10000,
+          "id": "1.1",
+          "name": "Define goals and scope",
+          "resource": "Project Manager"
+        },
+        {
+          "dependsOn": [
+            "1.1"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 10000,
+          "id": "1.2",
+          "name": "Identify target audience",
+          "resource": "Project Manager"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Planning",
+      "tasks": [
+        {
+          "dependsOn": [
+            "1.2"
+          ],
+          "durationDays": 1,
+          "estimatedCost": 5000,
+          "id": "2.1",
+          "name": "Create campaign brief",
+          "resource": "Project Manager"
+        },
+        {
+          "dependsOn": [
+            "2.1"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 12000,
+          "id": "2.2",
+          "name": "Storyboard teaser video",
+          "resource": "Designer"
+        },
+        {
+          "dependsOn": [
+            "2.1"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 7000,
+          "id": "2.3",
+          "name": "Draft copy for assets",
+          "resource": "Copywriter"
+        },
+        {
+          "dependsOn": [
+            "2.1"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 9000,
+          "id": "2.4",
+          "name": "Develop media buying plan",
+          "resource": "Media Buyer"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Production",
+      "tasks": [
+        {
+          "dependsOn": [
+            "2.2"
+          ],
+          "durationDays": 5,
+          "estimatedCost": 30000,
+          "id": "3.1",
+          "name": "Produce teaser video",
+          "resource": "Developer"
+        },
+        {
+          "dependsOn": [
+            "2.2",
+            "2.3"
+          ],
+          "durationDays": 4,
+          "estimatedCost": 16000,
+          "id": "3.2",
+          "name": "Design landing page UI",
+          "resource": "Designer"
+        },
+        {
+          "dependsOn": [
+            "2.2"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 12000,
+          "id": "3.3",
+          "name": "Create social media graphics",
+          "resource": "Designer"
+        },
+        {
+          "dependsOn": [
+            "2.3"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 7000,
+          "id": "3.4",
+          "name": "Write press release",
+          "resource": "Copywriter"
+        },
+        {
+          "dependsOn": [
+            "3.2"
+          ],
+          "durationDays": 4,
+          "estimatedCost": 24000,
+          "id": "3.5",
+          "name": "Build landing page",
+          "resource": "Developer"
+        },
+        {
+          "dependsOn": [
+            "2.4"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 12000,
+          "id": "3.6",
+          "name": "Create paid ad creatives",
+          "resource": "Designer"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Review & Approval",
+      "tasks": [
+        {
+          "dependsOn": [
+            "3.1"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 15000,
+          "id": "4.1",
+          "name": "Video approval round",
+          "resource": "Project Manager"
+        },
+        {
+          "dependsOn": [
+            "3.5"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 15000,
+          "id": "4.2",
+          "name": "Landing page approval round",
+          "resource": "Project Manager"
+        },
+        {
+          "dependsOn": [
+            "3.3",
+            "3.6"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 15000,
+          "id": "4.3",
+          "name": "Social & ad creatives approval round",
+          "resource": "Project Manager"
+        },
+        {
+          "dependsOn": [
+            "3.4"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 15000,
+          "id": "4.4",
+          "name": "Press release approval round",
+          "resource": "Project Manager"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Delivery & Closure",
+      "tasks": [
+        {
+          "dependsOn": [
+            "4.2"
+          ],
+          "durationDays": 1,
+          "estimatedCost": 6000,
+          "id": "5.1",
+          "name": "Publish landing page",
+          "resource": "Developer"
+        },
+        {
+          "dependsOn": [
+            "4.3"
+          ],
+          "durationDays": 1,
+          "estimatedCost": 3500,
+          "id": "5.2",
+          "name": "Schedule social media posts",
+          "resource": "Copywriter"
+        },
+        {
+          "dependsOn": [
+            "4.3"
+          ],
+          "durationDays": 1,
+          "estimatedCost": 4500,
+          "id": "5.3",
+          "name": "Launch paid advertising",
+          "resource": "Media Buyer"
+        },
+        {
+          "dependsOn": [
+            "4.4"
+          ],
+          "durationDays": 1,
+          "estimatedCost": 3500,
+          "id": "5.4",
+          "name": "Distribute press release",
+          "resource": "Copywriter"
+        },
+        {
+          "dependsOn": [
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.4"
+          ],
+          "durationDays": 1,
+          "estimatedCost": 5000,
+          "id": "5.5",
+          "name": "Project closure and handover",
+          "resource": "Project Manager"
+        }
+      ]
+    }
+  ],
+  "workflow": [
+    {
+      "description": "Define goals, scope and audience",
+      "name": "Initiation",
+      "owner": "Project Manager",
+      "step": 1
+    },
+    {
+      "description": "Create brief, storyboard, copy and media plan",
+      "name": "Planning",
+      "owner": "Project Manager",
+      "step": 2
+    },
+    {
+      "description": "Develop video, landing page, graphics and copy assets",
+      "name": "Production",
+      "owner": "Designer",
+      "step": 3
+    },
+    {
+      "description": "Conduct three\u2011day approval cycles for each deliverable",
+      "name": "Review & Approval",
+      "owner": "Project Manager",
+      "step": 4
+    },
+    {
+      "description": "Publish landing page, schedule posts and launch ads",
+      "name": "Deployment",
+      "owner": "Developer",
+      "step": 5
+    },
+    {
+      "description": "Finalize handover and close project",
+      "name": "Closure",
+      "owner": "Project Manager",
+      "step": 6
+    }
+  ]
+}

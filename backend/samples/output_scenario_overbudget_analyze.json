@@ -1,0 +1,127 @@
+{
+  "projectId": "summer-sale-multi-channel-push",
+  "risks": [
+    {
+      "category": "Cost",
+      "description": "Estimated cost uses 97.6% of the INR 350,000 budget and past projects averaged a 25.2% cost overrun (e.g., Winter Clearance ran 26% over).",
+      "id": 1,
+      "impact": 4,
+      "key": "cost-budget-utilization",
+      "level": "Critical",
+      "mitigation": [
+        "Introduce a strict cost\u2011tracking dashboard with daily updates",
+        "Negotiate contingency release only after key milestones are met"
+      ],
+      "owner": "Project Manager",
+      "priority": "Escalate immediately",
+      "probability": 5,
+      "score": 20
+    },
+    {
+      "category": "Time",
+      "description": "Task 3.3 (Produce final ad creatives) is on the critical path with 0 slack, so any delay pushes the 2026-11-25 deadline.",
+      "id": 2,
+      "impact": 4,
+      "key": "time-critical-3-3",
+      "level": "Critical",
+      "mitigation": [
+        "Start design work for 3.3 immediately after 2.3 finishes",
+        "Allocate an extra Designer for overlapping days if budget permits"
+      ],
+      "owner": "Project Manager",
+      "priority": "Escalate immediately",
+      "probability": 4,
+      "score": 16
+    },
+    {
+      "category": "Time",
+      "description": "Task 4.1 (Track ad performance and adjust bids) is critical with 0 slack; delays affect campaign optimisation before the 2026-11-25 deadline.",
+      "id": 3,
+      "impact": 4,
+      "key": "time-critical-4-1",
+      "level": "Critical",
+      "mitigation": [
+        "Begin performance tracking as soon as 3.5 is done",
+        "Add a backup Media Buyer for peak monitoring periods"
+      ],
+      "owner": "Media Buyer",
+      "priority": "Escalate immediately",
+      "probability": 4,
+      "score": 16
+    },
+    {
+      "category": "Resource",
+      "description": "Designer is over\u2011allocated (up to 3 concurrent tasks but only 2 designers), risking delays on tasks 2.3, 3.3 and 3.7.",
+      "id": 4,
+      "impact": 3,
+      "key": "resource-designer-overalloc",
+      "level": "High",
+      "mitigation": [
+        "Reschedule non\u2011critical design tasks to free capacity",
+        "Hire a freelance Designer for peak weeks"
+      ],
+      "owner": "Designer",
+      "priority": "Act this week",
+      "probability": 4,
+      "score": 12
+    },
+    {
+      "category": "Resource",
+      "description": "Media Buyer is over\u2011allocated (up to 2 concurrent tasks but only 1 buyer), affecting tasks 3.5 and 4.1.",
+      "id": 5,
+      "impact": 3,
+      "key": "resource-media-buyer-overalloc",
+      "level": "High",
+      "mitigation": [
+        "Split ad\u2011setup (3.5) into smaller batches handled sequentially",
+        "Secure a part\u2011time Media Buyer for the monitoring phase"
+      ],
+      "owner": "Media Buyer",
+      "priority": "Act this week",
+      "probability": 4,
+      "score": 12
+    },
+    {
+      "category": "Scope",
+      "description": "Influencer fees are fixed up front; if task 3.6 (Negotiate and contract influencers) slips, the partnership pack (5.2) may miss deliverable scope.",
+      "id": 6,
+      "impact": 3,
+      "key": "scope-influencer-fee-fixed",
+      "level": "Medium",
+      "mitigation": [
+        "Start influencer negotiations in parallel with design work",
+        "Create backup influencer list to switch quickly if contracts delay"
+      ],
+      "owner": "Influencer Manager",
+      "priority": "Plan a response",
+      "probability": 3,
+      "score": 9
+    },
+    {
+      "category": "Quality",
+      "description": "Critical task 3.3 must be completed quickly, increasing risk of sub\u2011par ad creatives that could lower campaign performance.",
+      "id": 7,
+      "impact": 3,
+      "key": "quality-ad-creative-rush",
+      "level": "Medium",
+      "mitigation": [
+        "Implement a rapid review checklist before final approval",
+        "Allocate a senior Designer to audit creative quality"
+      ],
+      "owner": "Designer",
+      "priority": "Plan a response",
+      "probability": 3,
+      "score": 9
+    }
+  ],
+  "summary": {
+    "byLevel": {
+      "Critical": 3,
+      "High": 2,
+      "Low": 0,
+      "Medium": 2
+    },
+    "highestScore": 20,
+    "total": 7
+  }
+}

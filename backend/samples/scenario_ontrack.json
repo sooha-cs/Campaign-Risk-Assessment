@@ -1,0 +1,97 @@
+{
+  "name": "Diwali Festive Email Campaign",
+  "description": "Email-led festive campaign with a landing page and paid ads. Scenario: ON TRACK.",
+  "projectType": "Marketing campaign",
+  "budget": 1200000,
+  "currency": "INR",
+  "startDate": "2026-10-12",
+  "deadline": "2026-12-11",
+  "teamSize": 6,
+  "resources": [
+    {
+      "role": "Project Manager",
+      "count": 1,
+      "costPerDay": 5000
+    },
+    {
+      "role": "Designer",
+      "count": 2,
+      "costPerDay": 4000
+    },
+    {
+      "role": "Copywriter",
+      "count": 1,
+      "costPerDay": 3500
+    },
+    {
+      "role": "Media Buyer",
+      "count": 1,
+      "costPerDay": 4500
+    },
+    {
+      "role": "Developer",
+      "count": 1,
+      "costPerDay": 6000
+    }
+  ],
+  "deliverables": [
+    "Email templates",
+    "Festive landing page",
+    "Paid ad creatives",
+    "Launch performance report"
+  ],
+  "constraints": [
+    "Festival launch date cannot move",
+    "Legal review of offers is required before launch"
+  ],
+  "pastProjects": [
+    {
+      "name": "Holi Sale",
+      "plannedCost": 800000,
+      "actualCost": 820000,
+      "plannedDays": 45,
+      "actualDays": 46,
+      "outcome": "Met targets"
+    },
+    {
+      "name": "Back to School",
+      "plannedCost": 600000,
+      "actualCost": 612000,
+      "plannedDays": 40,
+      "actualDays": 41,
+      "outcome": "Met targets"
+    },
+    {
+      "name": "Monsoon Offer",
+      "plannedCost": 700000,
+      "actualCost": 725000,
+      "plannedDays": 42,
+      "actualDays": 43,
+      "outcome": "Slightly above plan"
+    },
+    {
+      "name": "New Year Teaser",
+      "plannedCost": 500000,
+      "actualCost": 505000,
+      "plannedDays": 30,
+      "actualDays": 30,
+      "outcome": "Met targets"
+    },
+    {
+      "name": "Republic Day Sale",
+      "plannedCost": 650000,
+      "actualCost": 660000,
+      "plannedDays": 35,
+      "actualDays": 36,
+      "outcome": "Met targets"
+    },
+    {
+      "name": "Summer Mailer",
+      "plannedCost": 450000,
+      "actualCost": 455000,
+      "plannedDays": 28,
+      "actualDays": 28,
+      "outcome": "Met targets"
+    }
+  ]
+}

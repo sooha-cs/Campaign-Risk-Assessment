@@ -1,0 +1,143 @@
+{
+  "projectId": "product-launch-teaser-campaign",
+  "risks": [
+    {
+      "category": "Time",
+      "description": "Task 2.2 (Storyboard teaser video) is on the critical path with 0 slack; any delay pushes the launch event on 2026-11-02.",
+      "id": 1,
+      "impact": 4,
+      "key": "time-critical-2-2",
+      "level": "Critical",
+      "mitigation": [
+        "Start storyboard immediately after 2.1",
+        "Add a backup Designer to parallelize storyboard work"
+      ],
+      "owner": "Designer",
+      "priority": "Escalate immediately",
+      "probability": 5,
+      "score": 20
+    },
+    {
+      "category": "Time",
+      "description": "Task 3.2 (Design landing page UI) has zero slack and depends on 2.2 and 2.3; past projects averaged 32.8% delay, raising risk of missing the deadline.",
+      "id": 2,
+      "impact": 4,
+      "key": "time-critical-3-2",
+      "level": "Critical",
+      "mitigation": [
+        "Begin UI design concurrently with storyboard",
+        "Allocate a second Designer for UI work"
+      ],
+      "owner": "Designer",
+      "priority": "Escalate immediately",
+      "probability": 5,
+      "score": 20
+    },
+    {
+      "category": "Resource",
+      "description": "Developer is over\u2011allocated (up to 2 concurrent tasks) on Produce teaser video (3.1) and Build landing page (3.5) with zero slack on 3.5.",
+      "id": 3,
+      "impact": 4,
+      "key": "resource-developer-overload",
+      "level": "Critical",
+      "mitigation": [
+        "Engage a contract developer for video production",
+        "Split video coding into smaller modules"
+      ],
+      "owner": "Developer",
+      "priority": "Escalate immediately",
+      "probability": 4,
+      "score": 16
+    },
+    {
+      "category": "Resource",
+      "description": "Project Manager is over\u2011allocated (plan warning shows up to 2 tasks at once but only 1 available) affecting tasks 1.1,1.2,2.1,4.1,4.2,5.5.",
+      "id": 4,
+      "impact": 3,
+      "key": "resource-pm-overload",
+      "level": "High",
+      "mitigation": [
+        "Hire a temporary PM assistant",
+        "Reschedule non\u2011critical PM tasks to reduce overlap"
+      ],
+      "owner": "Project Manager",
+      "priority": "Act this week",
+      "probability": 4,
+      "score": 12
+    },
+    {
+      "category": "Resource",
+      "description": "Designer is over\u2011allocated (up to 3 concurrent tasks) impacting storyboard (2.2), UI design (3.2), and ad creatives (3.6).",
+      "id": 5,
+      "impact": 3,
+      "key": "resource-designer-overload",
+      "level": "High",
+      "mitigation": [
+        "Add a freelance Designer for ad creatives",
+        "Re\u2011order tasks to avoid overlapping design work"
+      ],
+      "owner": "Designer",
+      "priority": "Act this week",
+      "probability": 4,
+      "score": 12
+    },
+    {
+      "category": "Quality",
+      "description": "Each creative approval round takes 3 days; approval rounds for video (4.1) and landing page (4.2) have zero slack, so any quality issue delays launch.",
+      "id": 6,
+      "impact": 3,
+      "key": "quality-approval-delay",
+      "level": "High",
+      "mitigation": [
+        "Start review cycles early with draft versions",
+        "Assign a second reviewer to speed up approvals"
+      ],
+      "owner": "Project Manager",
+      "priority": "Act this week",
+      "probability": 4,
+      "score": 12
+    },
+    {
+      "category": "Scope",
+      "description": "If additional ad creatives are requested, Designer and Media Buyer will exceed capacity, extending the schedule beyond the 1\u2011day buffer.",
+      "id": 7,
+      "impact": 3,
+      "key": "scope-creatives-change",
+      "level": "Medium",
+      "mitigation": [
+        "Lock creative count in scope document",
+        "Negotiate extra budget for additional resources if scope expands"
+      ],
+      "owner": "Media Buyer",
+      "priority": "Plan a response",
+      "probability": 3,
+      "score": 9
+    },
+    {
+      "category": "Cost",
+      "description": "Estimated cost uses only 28.9% of the INR 900,000 budget, but past projects showed a 5.6% cost overrun average, risking unexpected expenses.",
+      "id": 8,
+      "impact": 2,
+      "key": "cost-contingency-low",
+      "level": "Low",
+      "mitigation": [
+        "Add a 10% contingency reserve",
+        "Track daily spend against budget"
+      ],
+      "owner": "Project Manager",
+      "priority": "Monitor",
+      "probability": 2,
+      "score": 4
+    }
+  ],
+  "summary": {
+    "byLevel": {
+      "Critical": 3,
+      "High": 3,
+      "Low": 1,
+      "Medium": 1
+    },
+    "highestScore": 20,
+    "total": 8
+  }
+}

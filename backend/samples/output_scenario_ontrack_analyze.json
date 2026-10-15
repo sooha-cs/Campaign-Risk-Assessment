@@ -1,0 +1,128 @@
+{
+  "projectId": "diwali-festive-email-campaign",
+  "risks": [
+    {
+      "category": "Resource",
+      "description": "Project Manager is over\u2011allocated (up to 2 concurrent tasks) while only 1 is available, affecting 12 critical tasks.",
+      "id": 1,
+      "impact": 4,
+      "key": "resource-pm-overallocation",
+      "level": "Critical",
+      "mitigation": [
+        "Reassign non\u2011critical tasks to Assistant PM or senior team member",
+        "Introduce a task\u2011level buffer of 1 day for PM\u2011handled activities"
+      ],
+      "owner": "Project Manager",
+      "priority": "Escalate immediately",
+      "probability": 4,
+      "score": 16
+    },
+    {
+      "category": "Time",
+      "description": "Task 3.1 (Develop landing page) is on the critical path with 0 slack and the Developer is over\u2011allocated, so any delay pushes the festival launch date.",
+      "id": 2,
+      "impact": 4,
+      "key": "time-dev-landing-page-3-1",
+      "level": "High",
+      "mitigation": [
+        "Add a second Developer for parallel coding if budget permits",
+        "Start task 3.1 immediately after task 2.5 and monitor daily progress"
+      ],
+      "owner": "Developer",
+      "priority": "Act this week",
+      "probability": 3,
+      "ratingNote": "Probability lowered to 3: the schedule buffer is 25% or more and past delays are small.",
+      "score": 12
+    },
+    {
+      "category": "Time",
+      "description": "20 of 24 tasks have zero slack; a single day slip in any critical task (e.g., 2.3 or 5.1) cascades to miss the 2026\u201112\u201111 launch.",
+      "id": 3,
+      "impact": 4,
+      "key": "time-cumulative-slack-risk",
+      "level": "High",
+      "mitigation": [
+        "Maintain a daily schedule review meeting",
+        "Add a 1\u2011day contingency buffer to the most downstream critical tasks"
+      ],
+      "owner": "Project Manager",
+      "priority": "Act this week",
+      "probability": 3,
+      "score": 12
+    },
+    {
+      "category": "Time",
+      "description": "Task 4.1 (Legal review and approval of offers) has 13 slack days but the festival launch date cannot move, making a late legal sign\u2011off a deadline risk.",
+      "id": 4,
+      "impact": 3,
+      "key": "time-legal-review-4-1",
+      "level": "Medium",
+      "mitigation": [
+        "Begin legal brief early (task 1.3) and request expedited review",
+        "Set a hard cut\u2011off date 7 days before launch for legal sign\u2011off"
+      ],
+      "owner": "Project Manager",
+      "priority": "Plan a response",
+      "probability": 3,
+      "score": 9
+    },
+    {
+      "category": "Quality",
+      "description": "Task 4.3 (Email rendering tests across clients) has zero slack; a rendering issue would require rework of task 3.2 and delay launch.",
+      "id": 5,
+      "impact": 3,
+      "key": "quality-email-rendering-4-3",
+      "level": "Medium",
+      "mitigation": [
+        "Run rendering tests on all major clients during task 3.2",
+        "Prepare fallback HTML version for problematic clients"
+      ],
+      "owner": "Designer",
+      "priority": "Plan a response",
+      "probability": 3,
+      "score": 9
+    },
+    {
+      "category": "Cost",
+      "description": "Media plan (task 2.6) may exceed the allocated 25.5% of budget; past projects showed an average cost overrun of 1.9%.",
+      "id": 6,
+      "impact": 2,
+      "key": "cost-media-budget-overrun",
+      "level": "Low",
+      "mitigation": [
+        "Negotiate fixed\u2011price contracts with media vendors",
+        "Track media spend weekly and adjust allocations early"
+      ],
+      "owner": "Media Buyer",
+      "priority": "Monitor",
+      "probability": 2,
+      "score": 4
+    },
+    {
+      "category": "Scope",
+      "description": "Adding extra paid\u2011ad platforms after task 2.6 could stretch resources and delay critical tasks 3.5 and 4.4.",
+      "id": 7,
+      "impact": 2,
+      "key": "scope-additional-ad-platforms",
+      "level": "Low",
+      "mitigation": [
+        "Lock ad platform list before task 2.6 completes",
+        "If new platforms are required, create a separate mini\u2011project with its own timeline"
+      ],
+      "owner": "Media Buyer",
+      "priority": "Monitor",
+      "probability": 2,
+      "score": 4
+    }
+  ],
+  "summary": {
+    "byLevel": {
+      "Critical": 1,
+      "High": 2,
+      "Low": 2,
+      "Medium": 2
+    },
+    "highestScore": 16,
+    "total": 7
+  }
+}

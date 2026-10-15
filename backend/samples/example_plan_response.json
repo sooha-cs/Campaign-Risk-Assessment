@@ -1,0 +1,490 @@
+{
+  "costEstimate": {
+    "baseCost": 68000,
+    "budget": 100000,
+    "byPhase": [
+      {
+        "cost": 10000,
+        "phase": "Planning"
+      },
+      {
+        "cost": 12500,
+        "phase": "Design"
+      },
+      {
+        "cost": 27000,
+        "phase": "Development"
+      },
+      {
+        "cost": 11500,
+        "phase": "Testing"
+      },
+      {
+        "cost": 7000,
+        "phase": "Deployment"
+      }
+    ],
+    "contingency": 6800,
+    "contingencyRate": 0.1,
+    "currency": "INR",
+    "total": 74800,
+    "variance": 25200,
+    "withinBudget": true
+  },
+  "resourcePlan": [
+    {
+      "assignedTasks": [
+        "1.1",
+        "1.2",
+        "2.3",
+        "5.1"
+      ],
+      "costPerDay": 2000,
+      "count": 1,
+      "overallocated": false,
+      "peakConcurrentTasks": 1,
+      "role": "Project Manager",
+      "totalDays": 8,
+      "utilizationPercent": 27
+    },
+    {
+      "assignedTasks": [
+        "2.1",
+        "2.2",
+        "3.1",
+        "3.2",
+        "3.3",
+        "4.3",
+        "5.2"
+      ],
+      "costPerDay": 1500,
+      "count": 2,
+      "overallocated": false,
+      "peakConcurrentTasks": 2,
+      "role": "Developer",
+      "totalDays": 30,
+      "utilizationPercent": 50
+    },
+    {
+      "assignedTasks": [
+        "4.1",
+        "4.2"
+      ],
+      "costPerDay": 1000,
+      "count": 1,
+      "overallocated": false,
+      "peakConcurrentTasks": 1,
+      "role": "Tester",
+      "totalDays": 7,
+      "utilizationPercent": 23
+    }
+  ],
+  "schedule": [
+    {
+      "dependsOn": [],
+      "durationDays": 3,
+      "endDate": "2026-10-14",
+      "isCritical": true,
+      "name": "Gather requirements",
+      "phase": "Planning",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-10-12",
+      "taskId": "1.1"
+    },
+    {
+      "dependsOn": [
+        "1.1"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-10-16",
+      "isCritical": true,
+      "name": "Define scope and plan",
+      "phase": "Planning",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-10-15",
+      "taskId": "1.2"
+    },
+    {
+      "dependsOn": [
+        "1.2"
+      ],
+      "durationDays": 4,
+      "endDate": "2026-10-20",
+      "isCritical": true,
+      "name": "UI/UX design",
+      "phase": "Design",
+      "resource": "Developer",
+      "slackDays": 0,
+      "startDate": "2026-10-17",
+      "taskId": "2.1"
+    },
+    {
+      "dependsOn": [
+        "1.2"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-19",
+      "isCritical": false,
+      "name": "Database design",
+      "phase": "Design",
+      "resource": "Developer",
+      "slackDays": 1,
+      "startDate": "2026-10-17",
+      "taskId": "2.2"
+    },
+    {
+      "dependsOn": [
+        "2.1",
+        "2.2"
+      ],
+      "durationDays": 1,
+      "endDate": "2026-10-21",
+      "isCritical": true,
+      "name": "Design review",
+      "phase": "Design",
+      "resource": "Project Manager",
+      "slackDays": 0,
+      "startDate": "2026-10-21",
+      "taskId": "2.3"
+    },
+    {
+      "dependsOn": [
+        "2.3"
+      ],
+      "durationDays": 8,
+      "endDate": "2026-10-29",
+      "isCritical": true,
+      "name": "Backend development",
+      "phase": "Development",
+      "resource": "Developer",
+      "slackDays": 0,
+      "startDate": "2026-10-22",
+      "taskId": "3.1"
+    },
+    {
+      "dependsOn": [
+        "2.3"
+      ],
+      "durationDays": 7,
+      "endDate": "2026-10-28",
+      "isCritical": false,
+      "name": "Frontend development",
+      "phase": "Development",
+      "resource": "Developer",
+      "slackDays": 1,
+      "startDate": "2026-10-22",
+      "taskId": "3.2"
+    },
+    {
+      "dependsOn": [
+        "2.3"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-10-24",
+      "isCritical": false,
+      "name": "Write test cases",
+      "phase": "Testing",
+      "resource": "Tester",
+      "slackDays": 8,
+      "startDate": "2026-10-22",
+      "taskId": "4.1"
+    },
+    {
+      "dependsOn": [
+        "3.1",
+        "3.2"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-11-01",
+      "isCritical": true,
+      "name": "Integration",
+      "phase": "Development",
+      "resource": "Developer",
+      "slackDays": 0,
+      "startDate": "2026-10-30",
+      "taskId": "3.3"
+    },
+    {
+      "dependsOn": [
+        "3.3",
+        "4.1"
+      ],
+      "durationDays": 4,
+      "endDate": "2026-11-05",
+      "isCritical": true,
+      "name": "System testing",
+      "phase": "Testing",
+      "resource": "Tester",
+      "slackDays": 0,
+      "startDate": "2026-11-02",
+      "taskId": "4.2"
+    },
+    {
+      "dependsOn": [
+        "3.3"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-11-03",
+      "isCritical": false,
+      "name": "Write user manual",
+      "phase": "Deployment",
+      "resource": "Project Manager",
+      "slackDays": 5,
+      "startDate": "2026-11-02",
+      "taskId": "5.1"
+    },
+    {
+      "dependsOn": [
+        "4.2"
+      ],
+      "durationDays": 3,
+      "endDate": "2026-11-08",
+      "isCritical": true,
+      "name": "Bug fixing",
+      "phase": "Testing",
+      "resource": "Developer",
+      "slackDays": 0,
+      "startDate": "2026-11-06",
+      "taskId": "4.3"
+    },
+    {
+      "dependsOn": [
+        "4.3",
+        "5.1"
+      ],
+      "durationDays": 2,
+      "endDate": "2026-11-10",
+      "isCritical": true,
+      "name": "Deploy and handover",
+      "phase": "Deployment",
+      "resource": "Developer",
+      "slackDays": 0,
+      "startDate": "2026-11-09",
+      "taskId": "5.2"
+    }
+  ],
+  "scheduleSummary": {
+    "criticalPath": [
+      "1.1",
+      "1.2",
+      "2.1",
+      "2.3",
+      "3.1",
+      "3.3",
+      "4.2",
+      "4.3",
+      "5.2"
+    ],
+    "daysAvailable": 32,
+    "deadline": "2026-11-12",
+    "durationDays": 30,
+    "finishDate": "2026-11-10",
+    "startDate": "2026-10-12",
+    "withinDeadline": true
+  },
+  "warnings": [],
+  "wbs": [
+    {
+      "id": "1",
+      "name": "Planning",
+      "tasks": [
+        {
+          "dependsOn": [],
+          "durationDays": 3,
+          "estimatedCost": 6000,
+          "id": "1.1",
+          "name": "Gather requirements",
+          "resource": "Project Manager"
+        },
+        {
+          "dependsOn": [
+            "1.1"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 4000,
+          "id": "1.2",
+          "name": "Define scope and plan",
+          "resource": "Project Manager"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Design",
+      "tasks": [
+        {
+          "dependsOn": [
+            "1.2"
+          ],
+          "durationDays": 4,
+          "estimatedCost": 6000,
+          "id": "2.1",
+          "name": "UI/UX design",
+          "resource": "Developer"
+        },
+        {
+          "dependsOn": [
+            "1.2"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 4500,
+          "id": "2.2",
+          "name": "Database design",
+          "resource": "Developer"
+        },
+        {
+          "dependsOn": [
+            "2.1",
+            "2.2"
+          ],
+          "durationDays": 1,
+          "estimatedCost": 2000,
+          "id": "2.3",
+          "name": "Design review",
+          "resource": "Project Manager"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Development",
+      "tasks": [
+        {
+          "dependsOn": [
+            "2.3"
+          ],
+          "durationDays": 8,
+          "estimatedCost": 12000,
+          "id": "3.1",
+          "name": "Backend development",
+          "resource": "Developer"
+        },
+        {
+          "dependsOn": [
+            "2.3"
+          ],
+          "durationDays": 7,
+          "estimatedCost": 10500,
+          "id": "3.2",
+          "name": "Frontend development",
+          "resource": "Developer"
+        },
+        {
+          "dependsOn": [
+            "3.1",
+            "3.2"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 4500,
+          "id": "3.3",
+          "name": "Integration",
+          "resource": "Developer"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Testing",
+      "tasks": [
+        {
+          "dependsOn": [
+            "2.3"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 3000,
+          "id": "4.1",
+          "name": "Write test cases",
+          "resource": "Tester"
+        },
+        {
+          "dependsOn": [
+            "3.3",
+            "4.1"
+          ],
+          "durationDays": 4,
+          "estimatedCost": 4000,
+          "id": "4.2",
+          "name": "System testing",
+          "resource": "Tester"
+        },
+        {
+          "dependsOn": [
+            "4.2"
+          ],
+          "durationDays": 3,
+          "estimatedCost": 4500,
+          "id": "4.3",
+          "name": "Bug fixing",
+          "resource": "Developer"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Deployment",
+      "tasks": [
+        {
+          "dependsOn": [
+            "3.3"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 4000,
+          "id": "5.1",
+          "name": "Write user manual",
+          "resource": "Project Manager"
+        },
+        {
+          "dependsOn": [
+            "4.3",
+            "5.1"
+          ],
+          "durationDays": 2,
+          "estimatedCost": 3000,
+          "id": "5.2",
+          "name": "Deploy and handover",
+          "resource": "Developer"
+        }
+      ]
+    }
+  ],
+  "workflow": [
+    {
+      "description": "Agree goals and scope",
+      "name": "Initiation",
+      "owner": "Project Manager",
+      "step": 1
+    },
+    {
+      "description": "Build WBS, schedule, budget",
+      "name": "Planning",
+      "owner": "Project Manager",
+      "step": 2
+    },
+    {
+      "description": "Design UI and database",
+      "name": "Design",
+      "owner": "Developer",
+      "step": 3
+    },
+    {
+      "description": "Build backend and frontend",
+      "name": "Development",
+      "owner": "Developer",
+      "step": 4
+    },
+    {
+      "description": "Test and fix defects",
+      "name": "Testing",
+      "owner": "Tester",
+      "step": 5
+    },
+    {
+      "description": "Deploy, hand over, review lessons",
+      "name": "Closure",
+      "owner": "Project Manager",
+      "step": 6
+    }
+  ]
+}

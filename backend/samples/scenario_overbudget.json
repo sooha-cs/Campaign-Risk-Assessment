@@ -1,0 +1,96 @@
+{
+  "name": "Summer Sale Multi-Channel Push",
+  "description": "Paid, influencer, email and social push with a tight budget. Scenario: OVER BUDGET.",
+  "projectType": "Marketing campaign",
+  "budget": 350000,
+  "currency": "INR",
+  "startDate": "2026-10-12",
+  "deadline": "2026-11-25",
+  "teamSize": 9,
+  "resources": [
+    {
+      "role": "Project Manager",
+      "count": 1,
+      "costPerDay": 5000
+    },
+    {
+      "role": "Designer",
+      "count": 2,
+      "costPerDay": 4000
+    },
+    {
+      "role": "Copywriter",
+      "count": 2,
+      "costPerDay": 3500
+    },
+    {
+      "role": "Media Buyer",
+      "count": 1,
+      "costPerDay": 4500
+    },
+    {
+      "role": "Developer",
+      "count": 2,
+      "costPerDay": 6000
+    },
+    {
+      "role": "Influencer Manager",
+      "count": 1,
+      "costPerDay": 4000
+    }
+  ],
+  "deliverables": [
+    "Influencer partnership pack",
+    "Paid ad set for three channels",
+    "Email series",
+    "Social media calendar",
+    "Sale landing page",
+    "Final campaign report"
+  ],
+  "constraints": [
+    "Ad spend must stay inside the budget",
+    "Influencer fees are fixed up front"
+  ],
+  "pastProjects": [
+    {
+      "name": "Winter Clearance",
+      "plannedCost": 400000,
+      "actualCost": 505000,
+      "plannedDays": 40,
+      "actualDays": 44,
+      "outcome": "Over budget"
+    },
+    {
+      "name": "Spring Launch",
+      "plannedCost": 350000,
+      "actualCost": 455000,
+      "plannedDays": 35,
+      "actualDays": 39,
+      "outcome": "Over budget"
+    },
+    {
+      "name": "Eid Offers",
+      "plannedCost": 300000,
+      "actualCost": 381000,
+      "plannedDays": 30,
+      "actualDays": 33,
+      "outcome": "Over budget"
+    },
+    {
+      "name": "Weekend Flash Sale",
+      "plannedCost": 150000,
+      "actualCost": 172000,
+      "plannedDays": 14,
+      "actualDays": 15,
+      "outcome": "Slightly over"
+    },
+    {
+      "name": "Brand Collab",
+      "plannedCost": 500000,
+      "actualCost": 640000,
+      "plannedDays": 50,
+      "actualDays": 55,
+      "outcome": "Over budget"
+    }
+  ]
+}

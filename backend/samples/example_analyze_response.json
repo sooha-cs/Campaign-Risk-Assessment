@@ -1,0 +1,112 @@
+{
+  "projectId": "library-management-system",
+  "risks": [
+    {
+      "category": "Time",
+      "description": "Only 2 days of buffer before the deadline; critical path 1.1 to 5.2 has no slack.",
+      "id": 1,
+      "impact": 4,
+      "key": "time-1-1",
+      "level": "Critical",
+      "mitigation": [
+        "Add a 3-day buffer",
+        "Start test-case writing early"
+      ],
+      "owner": "Project Manager",
+      "priority": "Escalate immediately",
+      "probability": 4,
+      "score": 16
+    },
+    {
+      "category": "Cost",
+      "description": "Past project overspent by 30%; contingency is only 10%.",
+      "id": 2,
+      "impact": 4,
+      "key": "cost-past-project-overspent",
+      "level": "High",
+      "mitigation": [
+        "Review spend weekly",
+        "Raise contingency to 15%"
+      ],
+      "owner": "Project Manager",
+      "priority": "Act this week",
+      "probability": 3,
+      "score": 12
+    },
+    {
+      "category": "Resource",
+      "description": "Two developers carry 30 of 45 person-days; one absence delays integration.",
+      "id": 3,
+      "impact": 3,
+      "key": "resource-developers-carry-person",
+      "level": "Medium",
+      "mitigation": [
+        "Cross-train a second developer",
+        "Plan leave around integration week"
+      ],
+      "owner": "Developer",
+      "priority": "Plan a response",
+      "probability": 3,
+      "score": 9
+    },
+    {
+      "category": "Time",
+      "description": "Late approval of design review task 2.3 would shift all 3 development tasks.",
+      "id": 4,
+      "impact": 3,
+      "key": "time-2-3",
+      "level": "Medium",
+      "mitigation": [
+        "Book reviewer in advance",
+        "Name a backup approver"
+      ],
+      "owner": "Project Manager",
+      "priority": "Plan a response",
+      "probability": 3,
+      "ratingNote": "Probability raised to 3: the schedule buffer is under 10% of the available days.",
+      "score": 9
+    },
+    {
+      "category": "Quality",
+      "description": "Only 4 days for system testing may miss defects.",
+      "id": 5,
+      "impact": 4,
+      "key": "quality-only-days-system",
+      "level": "Medium",
+      "mitigation": [
+        "Automate smoke tests",
+        "Test during development"
+      ],
+      "owner": "Tester",
+      "priority": "Plan a response",
+      "probability": 2,
+      "score": 8
+    },
+    {
+      "category": "Scope",
+      "description": "Library staff may add features after design review task 2.3.",
+      "id": 6,
+      "impact": 2,
+      "key": "scope-2-3",
+      "level": "Medium",
+      "mitigation": [
+        "Freeze scope after design review",
+        "Use a change request log"
+      ],
+      "owner": "Project Manager",
+      "priority": "Plan a response",
+      "probability": 3,
+      "score": 6
+    }
+  ],
+  "summary": {
+    "byLevel": {
+      "Critical": 1,
+      "High": 1,
+      "Low": 0,
+      "Medium": 4
+    },
+    "highestScore": 16,
+    "total": 6
+  }
+}
